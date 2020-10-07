@@ -29,6 +29,7 @@ $body-size: 1.4rem;
 $dk-navy: #00336A;
 $dk-blue: #1C65BE;
 $med-blue: #0B9FEC;
+$lt-blue: #98D3F2;
 $yellow: #F7E599;
 
 $link-color: $med-blue;
@@ -133,6 +134,16 @@ h1.entry-title .post-content h1
 .fusion-content-boxes.content-boxes-icon-on-side.homepage-contentboxes {
   .heading {
     margin-bottom: 0;
+  }
+}
+
+/* LANDING PAGE */
+.landing-page-title-bar.fusion-page-title-bar {
+  height: 200px;
+  background-position: 100% 0 !important;
+  background-color: $lt-blue;
+  .fusion-page-title-wrapper {
+    align-items: flex-end;
   }
 }
 
