@@ -55,11 +55,54 @@ em, i {
   font-style: italic;
 }
 
+img[src$="svg"] {
+  width: 100%;
+}
+
+h1, .fusion-page-title-bar h1 
+h1.entry-title .post-content h1
+.fusion-title h1, #main h2 {
+  font-weight: $med !important
+}
+
 h1, .fusion-page-title-bar h1 
 h1.entry-title .post-content h1
 .fusion-title h1 {
   font-size: 2.1em !important;
-  font-weight: $med !important
+}
+
+.fusion-page-title-bar h1.entry-title {
+  margin-bottom: 0.6rem;
+}
+
+#wrapper .post-content h2, h2 {
+  font-size: 1.8em;
+  border-bottom: $dk-navy 1px solid;
+  padding-left: 0.5rem;
+  line-height: 120%;
+  margin-bottom: 1.0rem;
+  margin-top: 1.0rem;
+}
+
+h2.title-heading-left {
+  margin-bottom: 2.5rem !important;
+  margin-top: 1.3rem !important;
+  padding-left: 0.5rem !important;
+}
+
+.fusion-post-content p, 
+.post-content p {
+  margin-bottom: 1.9rem;
+}
+
+p ~ h2 {
+  margin-top: 3.0rem !important;
+}
+
+.fusion-text ul, 
+.fusion-text ol { 
+  margin-top: -1.6rem;
+  margin-left: 1.5rem;
 }
 
 /* MENU */
@@ -76,6 +119,27 @@ h1.entry-title .post-content h1
 .hero-text-overlay {
   background-color: $yellow;
   bottom: 60px;
+  padding: 2.0rem 4.0rem 2.0rem 6.0rem;
+  width: 750px;
+  .first-line {
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .dashed-text {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 5.1rem;
+  }
+}
+
+.post-content .hero-text-overlay {
+  h1 {
+    color: $dk-navy;
+    font-size: 2.3em !important;
+    line-height: 110%;
+    font-weight: $news !important
+  }
 }
 
 .homepage-contentbox-bkgrd {
@@ -107,6 +171,12 @@ h1.entry-title .post-content h1
   .heading {
     background-color: $dk-blue;
     padding: 0.7rem 5.5rem;
+    .content-box-heading {
+      border: none !important;
+      margin-bottom: 0 !important;
+      margin-top: 0 !important;
+      padding-left: 0 !important;
+    }
   }
   .fusion-column {
     padding-left: 30px;
@@ -116,25 +186,38 @@ h1.entry-title .post-content h1
 
 .homepage-news-column {
   text-align: center;
+  .fusion-title {
+    h1 {
+      font-size: 3.0em !important;
+      font-weight: $news !important
+    }
+  }
+  .fusion-title.sep-underline {
+    padding-bottom: 34px;
+  }
   .homepage-news-content {
     font-family: $good !important;
     font-weight: $lt;
-    line-height: 140%;
-    font-size: 1.2em !important;
-    width: 60%;
+    line-height: 145%;
+    font-size: 1.4em !important;
+    width: 70%;
     margin: 0 auto;
     strong {
       font-weight: $med;
     }
   }
-  h1 {
+  .homepage-news-button {
+    font-family: $good;
+    font-weight: $med;
+    font-size: 1.5em;
+    padding: 1.1rem 4.8rem;
   }
 }
 
 #main {
   .fusion-content-boxes.content-boxes-clean-horizontal.homepage-contentboxes {
     h2 {
-      font-size: 1.3em !important;
+      font-size: 1.5em !important;
       line-height: 110% !important;
       font-family: $good !important;
       font-weight: $med;
@@ -171,16 +254,74 @@ h1.entry-title .post-content h1
   .fusion-page-title-wrapper {
     h1.entry-title {
       text-transform: uppercase;
-      max-width: 500px;
+      max-width: 528px;
     }
   }
+}
+
+/* CIMACS INST AND PI PAGES */
+.cimacs-logo-wrapper {
+  .fusion-imageframe {
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
+    display: block;
+    margin: 0 auto;
+  }
+  .mt-sinai-logo {
+    max-width: 177px;
+    padding: 0;
+  }
+}
+
+.pi-image {
+  padding-right: 2.0rem;
+  border-right: #000 1px solid;
+}
+
+.pi-text {
+  padding-top: 2.3rem;
+  padding-left: 2.0rem;
+  border-left: #000 1px solid;
+  margin-left: -1px;
+}
+
+.pi-name {
+  font-family: $good-wide;
+  font-weight: $bold;
+  font-size: 1.1em;
+}
+
+.pi-position {
+  color: $dk-navy;
+  font-family: $good-wide;
+  font-style: italic;
+  line-height: 125%;
+}
+
+.fusion-post-content .pi-name { 
+  margin-bottom: 1.9rem;
+}
+
+.post-content .pi-position {
+  margin-bottom: 0.7rem;
+}
+
+.pi-text .pi-position:last-of-type {
+  margin-bottom: 1.9rem;
 }
 
 
 /* FOOTER */
 
-.upper-footer-margin {
-  margin-top: 55px;
+.footer-upper-logo {
+  text-align: center;
+  a {
+    display: inline-block;
+  }
+}
+
+.footer-inst-logos-container {
+  margin-top: 80px;
 }
 
 .footer-inst-logos {
@@ -193,49 +334,46 @@ h1.entry-title .post-content h1
   border-bottom: #fff 1px solid;
 }
 
-.footer-menu-and-legal {
+.fusion-footer-widget-area {
+  .footer-menu-and-legal {
     text-align: center;
-	  color: #fff;
+    color: #fff;
+    a {
+      text-decoration: underline;
+      color: #fff;
+      font-weight: 400;
+      font-size: 0.9em;
+    }
+    a:hover {
+      color: #ccc;
+    }
+    .footer-menu {
+      display: inline-block
+    }
+    .footer-menu ul {
+      list-style: none;
+    }
+    .footer-menu li {
+      float: left;
+      padding: 0 10px;
+      border-right: #fff 1px solid;
+    }
+    .footer-menu li:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
+    .footer-menu a {
+      font-size: 1.4em;
+    }
+    .footer-legal{
+      font-size: 0.8em;
+    }
+    .footer-legal a{
+      font-size: 1.0em;
+    }
+  }
 }
 
-.footer-menu-and-legal a {
-    text-decoration: underline;
-	  color: #fff;
-		font-weight: 400;
-}
-
-.footer-menu-and-legal a:hover {
-    color: #ccc;
-}
-
-.footer-menu-and-legal .footer-menu {
-		display: inline-block
-}
-
-.footer-menu-and-legal .footer-menu ul {
-  list-style: none;
-}
-
-.footer-menu-and-legal .footer-menu li {
-    float: left;
-    padding: 0 10px;
-    border-right: #fff 1px solid;
-}
-
-.footer-menu-and-legal .footer-menu li:last-child {
-    border-right: none;
-    padding-right: 0;
-}
-
-#footer .footer-menu-and-legal .footer-menu a {
-    font-size: 0.9em;
-}
-#footer .footer-menu-and-legal .footer-legal{
-    font-size: 0.8em;
-}
-#footer .footer-menu-and-legal .footer-legal a{
-    font-size: 1.0em;
-}
 
 /* UTILTIES */
 .absolute {
