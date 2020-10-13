@@ -99,10 +99,19 @@ p ~ h2 {
   margin-top: 3.0rem !important;
 }
 
-.fusion-text ul, 
-.fusion-text ol { 
+.post-content ul, 
+.post-content ol { 
   margin-top: -1.6rem;
   margin-left: 1.5rem;
+}
+
+.post-content {
+  h2 + ul {
+    margin-top: 1.1rem;
+  }
+  ul ul {
+    margin-top: 0.2rem;
+  }
 }
 
 /* MENU */
@@ -310,6 +319,53 @@ p ~ h2 {
   margin-bottom: 1.9rem;
 }
 
+/* ASSAY ACCORDIONS */
+
+.fusion-accordian.assay-accordion {
+  margin: 1.2rem 0 2.0rem;
+  .panel-heading {
+    background-color: $dk-blue;
+    a {
+      font-family: $good;
+      font-weight: $med;
+      color: #fff;
+      font-size: 1.5em;
+    }
+  }
+  #accordion-221-1 {
+    .fa-fusion-box {
+      background: none;
+      border: #fff 1px solid;
+    }
+    .panel-title .active .fa-fusion-box, 
+    .panel-title a:hover .fa-fusion-box {
+      background: none !important;
+    }
+  }
+  .panel-collapse {
+    border: $dk-blue 1px solid;
+    .panel-body {
+      h3 {
+        margin-bottom: 0.4rem;
+        //font-family: $good !important;
+        font-weight: $med !important;
+      }
+      ul + h3 {
+        margin-top: 2.0rem;
+      }
+    }
+  }
+}
+
+.fusion-accordian.assay-accordion {
+  .fusion-toggle-boxed-mode:hover {
+    .panel-heading:hover {
+    }
+    .panel-title a, .fusion-accordian .panel-title a:hover {
+      color: #fff !important;
+    }
+  }
+}
 
 /* FOOTER */
 
