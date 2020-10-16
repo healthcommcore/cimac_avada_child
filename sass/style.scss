@@ -374,6 +374,18 @@ p ~ h2 {
   }
 }
 
+/* CONTACT FORM */
+
+.wpcf7-form input[type="submit"], 
+.wpcf7-submit {
+  background-color: $med-blue !important;
+}
+
+.wpcf7-form input[type="submit"]:hover, 
+.wpcf7-submit:hover {
+  background-color: $dk-blue !important;
+}
+
 /* FOOTER */
 
 .footer-upper-logo {
