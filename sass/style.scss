@@ -258,6 +258,7 @@ p ~ h2 {
   border: none !important;
   height: 200px;
   background-position: 100% 0 !important;
+  background-size: auto;
   background-color: $lt-blue;
   margin-bottom: 60px;
   .fusion-page-title-wrapper {
@@ -323,13 +324,17 @@ p ~ h2 {
 
 .fusion-accordian.assay-accordion {
   margin: 1.2rem 0 2.0rem;
+  .fusion-panel {
+    margin-bottom: 1.0rem;
+  }
   .panel-heading {
     background-color: $dk-blue;
-    a {
+    .panel-title a {
       font-family: $good;
       font-weight: $med;
       color: #fff;
       font-size: 1.5em;
+      padding: 0.7rem 1.5rem 0.9rem;
     }
   }
   #accordion-221-1 {
@@ -344,6 +349,8 @@ p ~ h2 {
   }
   .panel-collapse {
     border: $dk-blue 1px solid;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     .panel-body {
       h3 {
         margin-bottom: 0.4rem;
