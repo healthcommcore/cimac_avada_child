@@ -459,6 +459,104 @@ p ~ h2 {
   position: relative;
 }
 
+/**************************************************/
+/****************** RESPONSIVE ********************/
+/**************************************************/
+
+/** MENU **/
+@media (max-width: 1079px) and (min-width: 1001px) {
+  .avada-responsive:not(.rtl) .fusion-header-v1 .fusion-main-menu > ul > li {
+    padding-right: 1.2rem !important;
+  }
+  .fusion-main-menu > ul > li > a, 
+  .fusion-vertical-menu-widget ul.menu li a {
+    font-size: 0.7em !important;
+  }
+}
+
+
+/* HOMEPAGE TEXT BOXES */
+@media (max-width: 1252px) and (min-width: 982px) {
+  #main {
+    .fusion-content-boxes.content-boxes-clean-horizontal.homepage-contentboxes {
+      h2 {
+        font-size: 1.2em !important;
+      }
+      .heading {
+        padding: 0.6rem 4.3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 981px) and (min-width: 801px) {
+  #main {
+    .fusion-content-boxes.content-boxes-clean-horizontal.homepage-contentboxes {
+      h2 {
+        font-size: 1.1em !important;
+      }
+      .heading {
+        padding: 0.6rem 1.0rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1034px) and (min-width: 982px) {
+  #main {
+    .fusion-content-boxes.content-boxes-clean-horizontal.homepage-contentboxes {
+      .heading {
+        padding: 0.5rem 3.5rem;
+      }
+    }
+  }
+}
+
+/* HOMEPAGE HERO TEXT */
+@media (max-width: 1000px) and (min-width: 801px) {
+  .hero-text-overlay {
+    width: 550px;
+    padding: 1.5rem 1.8rem 1.6rem 3.3rem;
+  }
+  .post-content .hero-text-overlay {
+    h1 {
+      font-size: 1.8em !important;
+    }
+  }
+}
+
+/* LANDING PAGE */
+@media (max-width: 1351px) and (min-width: 1126px) {
+  .landing-page-title-bar.fusion-page-title-bar {
+    height: 150px;
+    background-size: 550px;
+  }
+}
+
+@media (max-width: 1125px) and (min-width: 901px) {
+  .landing-page-title-bar.fusion-page-title-bar {
+    height: 122px;
+    background-size: 450px;
+    .fusion-page-title-wrapper {
+      h1.entry-title {
+        max-width: 450px;
+      }
+    }
+  }
+  .fusion-page-title-bar h1, h1.entry-title, 
+  .post-content h1, .fusion-title h1 {
+    font-size: 1.6em !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .landing-page-title-bar.fusion-page-title-bar {
+    background-image: none !important;
+  }
+}
+
+
+/* FOOTER */
 @media (max-width: 768px) {
   .footer-inst-logos {
     width: 100%;
