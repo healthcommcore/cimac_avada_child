@@ -474,6 +474,53 @@ p ~ h2 {
   }
 }
 
+/* HOMEPAGE HERO TEXT */
+@media (max-width: 1000px) and (min-width: 801px) {
+  .hero-text-overlay {
+    width: 550px;
+    padding: 1.5rem 1.8rem 1.6rem 3.3rem;
+  }
+  .post-content .hero-text-overlay {
+    h1 {
+      font-size: 1.8em !important;
+    }
+  }
+}
+
+@media (max-width: 800px) and (min-width: 641px) {
+  .hero-text-overlay {
+    bottom: 30px;
+    width: 450px;
+    padding: 1.0rem 1.8rem;
+    .dashed-text {
+      margin-left: 3.0rem;
+    }
+  }
+  .post-content .hero-text-overlay {
+    h1 {
+      font-size: 1.6em !important;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .absolute.hero-text-overlay {
+    position: relative;
+  }
+  .hero-text-overlay {
+    bottom: 0;
+    width: 100%;
+    padding: 1.0rem 1.8rem;
+    .dashed-text {
+      margin-left: 2.2rem;
+    }
+  }
+  .post-content .hero-text-overlay {
+    h1 {
+      font-size: 1.6em !important;
+    }
+  }
+}
 
 /* HOMEPAGE TEXT BOXES */
 @media (max-width: 1252px) and (min-width: 982px) {
@@ -489,7 +536,7 @@ p ~ h2 {
   }
 }
 
-@media (max-width: 981px) and (min-width: 801px) {
+@media (max-width: 981px) {
   #main {
     .fusion-content-boxes.content-boxes-clean-horizontal.homepage-contentboxes {
       h2 {
@@ -512,18 +559,47 @@ p ~ h2 {
   }
 }
 
-/* HOMEPAGE HERO TEXT */
-@media (max-width: 1000px) and (min-width: 801px) {
-  .hero-text-overlay {
-    width: 550px;
-    padding: 1.5rem 1.8rem 1.6rem 3.3rem;
-  }
-  .post-content .hero-text-overlay {
-    h1 {
-      font-size: 1.8em !important;
+@media (max-width: 640px) {
+  .fusion-content-boxes.content-boxes-clean-horizontal.homepage-contentboxes {
+    .fusion-column {
+      padding-left: 0;
+      padding-right: 0;
     }
+    margin-bottom: 0;
+  }
+  .fusion-body .fusion-flex-container.fusion-builder-row-2 {
+    margin-top: 10px !important;
   }
 }
+
+/* HOMEPAGE NEWS */
+@media (max-width: 640px) {
+  .homepage-news-column {
+    text-align: left;
+    .fusion-title {
+      h1 {
+        font-size: 2.5em !important;
+      }
+    }
+    .fusion-title.sep-underline {
+      padding-bottom: 20px;
+    }
+    .homepage-news-content {
+      margin-top: 14px;
+      line-height: 130%;
+      font-size: 1.2em !important;
+      width: 100%;
+    }
+    .fusion-button.button-1.homepage-news-button {
+      margin-top: 10px !important;
+    }
+  }
+  .fusion-body .homepage-news-container.fusion-flex-container.fusion-builder-row-3 {
+    padding-top: 3.0rem !important;
+    padding-bottom: 3.0rem !important;
+  }
+}
+
 
 /* LANDING PAGE */
 @media (max-width: 1351px) and (min-width: 1126px) {
@@ -540,21 +616,80 @@ p ~ h2 {
     .fusion-page-title-wrapper {
       h1.entry-title {
         max-width: 450px;
+        font-size: 1.6em !important;
       }
     }
-  }
-  .fusion-page-title-bar h1, h1.entry-title, 
-  .post-content h1, .fusion-title h1 {
-    font-size: 1.6em !important;
   }
 }
 
 @media (max-width: 900px) {
   .landing-page-title-bar.fusion-page-title-bar {
     background-image: none !important;
+    .fusion-page-title-wrapper {
+      h1.entry-title {
+        font-size: 1.9em !important;
+      }
+    }
+  }
+  .landing-page-title-bar.fusion-page-title-bar .fusion-page-title-wrapper h1.entry-title {
+    max-width: none;
+    margin-bottom: 0;
+  }
+  .fusion-body:not(.avada-has-page-title-mobile-height-auto) {
+    .fusion-page-title-bar:not(.fusion-tb-page-title-bar) {
+      min-height: auto !important;
+    }
+  }
+  .fusion-body:not(.avada-has-page-title-mobile-height-auto) { 
+    .fusion-page-title-row {
+      min-height: auto !important;
+    }
+  }
+  .fusion-page-title-bar .fusion-page-title-row h1 {
+    line-height: 110% !important;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
 
+@media (max-width: 800px) {
+  .landing-page-title-bar.fusion-page-title-bar {
+    margin-bottom: 0;
+  }
+}
+
+/* MAIN */
+@media (max-width: 800px) {
+  #main {
+    padding-bottom: 10px !important;
+  }
+  .home #main {
+    padding-bottom: 0 !important;
+  }
+}
+
+/* CIMACS INST AND PI PAGES */
+@media (max-width: 640px) {
+  .pi-image, .pi-text {
+    border: none;
+  }
+  .pi-image {
+    padding-right: 0;
+  }
+  .pi-text {
+    padding-left: 0;
+  }
+  .abcfslPadBMB30 {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* SIDEBAR */
+@media (max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
+}
 
 /* FOOTER */
 @media (max-width: 768px) {
@@ -567,4 +702,13 @@ p ~ h2 {
       margin: 20px 0;
     }
   }
+  .footer-upper-logo.fusion-footer-widget-column {
+    margin-bottom: 0 !important;
+  }
+  .footer-inst-logos-container {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 640px) {
 }
