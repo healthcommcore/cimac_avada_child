@@ -353,6 +353,7 @@ p ~ h2 {
     padding-right: 1.5rem;
     .panel-body {
       h3 {
+        word-break: break-word;
         margin-bottom: 0.4rem;
         //font-family: $good !important;
         font-weight: $med !important;
@@ -647,8 +648,8 @@ p ~ h2 {
   }
   .fusion-page-title-bar .fusion-page-title-row h1 {
     line-height: 110% !important;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.6rem;
   }
 }
 
@@ -710,5 +711,19 @@ p ~ h2 {
   }
 }
 
+/* MAIN */
 @media (max-width: 640px) {
+  #main {
+    font-size: 90% !important;
+    line-height: 136%;
+    .fusion-post-content p, 
+    .post-content p {
+      margin-bottom: 1.3rem;
+    }
+    .post-content ol, 
+    .post-content ul {
+      margin-top: -1.2rem;
+      margin-left: 0;
+    }
+  }
 }
