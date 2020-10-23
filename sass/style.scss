@@ -716,14 +716,14 @@ p ~ h2 {
   #main {
     font-size: 90% !important;
     line-height: 136%;
-    .fusion-post-content p, 
-    .post-content p {
-      margin-bottom: 1.3rem;
-    }
-    .post-content ol, 
-    .post-content ul {
-      margin-top: -1.2rem;
-      margin-left: 0;
-    }
+  }
+  .fusion-post-content p, 
+  .post-content p {
+    margin-bottom: 1.3rem;
+  }
+  .post-content ol, 
+  .post-content ul {
+    margin-top: -1.2rem;
+    margin-left: 0;
   }
 }
